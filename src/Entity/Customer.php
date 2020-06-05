@@ -55,4 +55,9 @@ class Customer
 
         return $this;
     }
+
+    public function getCustomerFullName(): string
+    {
+        return $this->getFirstName() . '' . $this->getLastName();
+    }
 }
